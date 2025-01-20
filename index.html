@@ -3,15 +3,24 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>WorSHIP Band</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Zeyada&display=swap" rel="stylesheet">
     <style type="text/css" media="screen">
-        main, form {
+        body {
+            font-family: sans-serif;
+        }
+        main {
+            text-align: center;
+        }
+        main,
+        section, form {
             display: flex;
             justify-content: center;
             align-items: center;
+
         }
 
         h1 {
@@ -21,6 +30,20 @@
             font-size: 10rem;
             animation: fadeIn 1s ease-in 0s;
             animation-fill-mode: both;
+        }
+
+        form {
+            border: 2px solid black;
+            border-radius: 5px;
+            padding: 1rem;
+            width: min-content;
+
+        }
+        label {
+            line-height: 1.5rem;
+        }
+        form>* {
+            margin: 1rem;
         }
 
         @keyframes fadeIn {
@@ -37,25 +60,30 @@
                 transform: scale(1);
             }
         }
+
     </style>
 </head>
 
 <body>
     <main role="main">
         <h1>WorSHIP Band</h1>
-        
-    </main>
 
-            <form action="">
-                <label>Hogyan szólíthatunk?
-                    <input type="text" name="name" required placeholder="Példa Pista">
-                </label>
-                <label>E-mail címed
-                    <input type="email"  name="email" required placeholder="a.te.emailcímed@gmail.com">
-                </label>
-                <button type="submit">Feliratkozom</button>
-            </form>
-       
+    </main>
+    <section>
+        <p>Ha értesülni szeretnél a következő dicsőítő alkalmunkról, akkor iratkozz fel! ⛪ 🎵 </p>
+    </section>
+    <section>
+        <form action="">
+            <label>Hogyan szólíthatunk?
+                <input type="text" name="name" required placeholder="Példa Pista">
+            </label>
+            <label>E-mail címed:
+                <input type="email" name="email" required placeholder="a.te.emailcímed@gmail.com">
+            </label>
+            <button type="submit">Feliratkozom</button>
+        </form>
+    </section>
+
 </body>
 
 </html>
