@@ -1,5 +1,6 @@
 <!DOCTYPE HTML>
 <html>
+
 <head>
     <meta charset="utf-8">
     <title>WorSHIP Band</title>
@@ -7,11 +8,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Zeyada&display=swap" rel="stylesheet">
     <style type="text/css" media="screen">
-        main {
+        main, form {
             display: flex;
             justify-content: center;
             align-items: center;
         }
+
         h1 {
             font-family: "Zeyada", cursive;
             font-weight: 400;
@@ -20,23 +22,40 @@
             animation: fadeIn 1s ease-in 0s;
             animation-fill-mode: both;
         }
+
         @keyframes fadeIn {
             0% {
                 opacity: 0;
                 transform: scale(0.9);
             }
+
             90% {
                 opacity: 100;
             }
+
             100% {
                 transform: scale(1);
             }
         }
     </style>
 </head>
+
 <body>
     <main role="main">
         <h1>WorSHIP Band</h1>
+        
     </main>
+
+            <form action="">
+                <label>Hogyan szólíthatunk?
+                    <input type="text" name="name" required placeholder="Példa Pista">
+                </label>
+                <label>E-mail címed
+                    <input type="email"  name="email" required placeholder="a.te.emailcímed@gmail.com">
+                </label>
+                <button type="submit">Feliratkozom</button>
+            </form>
+       
 </body>
+
 </html>
